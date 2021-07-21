@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/latar2"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="132dp"
+        android:layout_height="123dp"
+        android:src="@drawable/odop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+    <EditText
+        android:backgroundTint="@color/white"
+        android:id="@+id/et_register_id"
+        android:hint="id"
+        android:textColor="@color/white"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center" />
+    <EditText
+        android:backgroundTint="@color/white"
+        android:id="@+id/et_register_email"
+        android:hint="email"
+        android:textColor="@color/white"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center" />
+    <EditText
+        android:backgroundTint="@color/white"
+        android:id="@+id/et_register_username"
+        android:hint="username"
+        android:textColor="@color/white"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center" />
+    <EditText
+        android:backgroundTint="@color/white"
+        android:id="@+id/et_register_password"
+        android:hint="password"
+        android:textColor="@color/white"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_login_submit"
+            android:text="Register"
+            android:backgroundTint="@color/green"
+            style="@style/btn_form"/>
+        <Button
+            android:id="@+id/btn_login_register"
+            android:backgroundTint="@color/green"
+            android:text="Cancel"
+            style="@style/btn_form"/>
+    </LinearLayout>
+</LinearLayout>
