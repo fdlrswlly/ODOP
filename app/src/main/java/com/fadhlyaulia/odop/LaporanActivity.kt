@@ -15,12 +15,14 @@ class LaporanActivity : AppCompatActivity() {
     lateinit var apiService: ServiceInterface
     private var  ambilData: ArrayList<LaporanData> = arrayListOf()
     lateinit var btnadd: View
+    lateinit var btnex: View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_laporan)
         rvdata = findViewById(R.id.rv_data)
         btnadd = findViewById(R.id.btn_main_add)
+        btnex = findViewById(R.id.btn_main_exit)
         btnadd.setOnClickListener {
             val pindah = Intent(this, AddActivity::class.java)
             startActivity(pindah)
@@ -42,6 +44,10 @@ class LaporanActivity : AppCompatActivity() {
             override fun onFailure(call: retrofit2.Call<List<LaporanData>>, t: Throwable) {
             }
         })
+        btnex.setOnClickListener {
+            val pindah = Intent(this, MainActivity::class.java)
+            startActivity(pindah)
+        }
 
     }
 }

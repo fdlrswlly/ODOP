@@ -63,11 +63,11 @@ class UpdateActivity : AppCompatActivity() {
             ).enqueue(object : Callback<LaporanData> {
                 override fun onResponse(call: Call<LaporanData>, response: Response<LaporanData>) {
                     startActivity(pindah)
-                    Toast.makeText(baseContext, "Update Data Success", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(baseContext, "Alhamdulillah! Laporan mu terupdate", Toast.LENGTH_SHORT).show()
                 }
 
                 override fun onFailure(call: Call<LaporanData>, t: Throwable) {
-                    Toast.makeText(baseContext, "Update Data Failed", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(baseContext, "Afwan! Laporanmu gagal diupdate", Toast.LENGTH_SHORT).show()
                 }
 
             })

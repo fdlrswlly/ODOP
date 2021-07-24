@@ -46,11 +46,11 @@ class AddActivity : AppCompatActivity() {
             apiService.postLaporan(array).enqueue(object : Callback<LaporanData> {
                 override fun onResponse(call: Call<LaporanData>, response: Response<LaporanData>) {
                     startActivity(Intent(this@AddActivity, LaporanActivity::class.java))
-                    Toast.makeText(baseContext, "Add Data Success", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(baseContext, "Alhamdulillah! Laporanmu berhasil", Toast.LENGTH_SHORT).show()
                 }
 
                 override fun onFailure(call: Call<LaporanData>, t: Throwable) {
-                    Toast.makeText(baseContext, "Add Data Failed", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(baseContext, "Afwan! Laporanmu gagal", Toast.LENGTH_SHORT).show()
                 }
             })
         }

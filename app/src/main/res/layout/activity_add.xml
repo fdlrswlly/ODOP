@@ -6,34 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".AddActivity"
     android:orientation="vertical"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"
+    android:background="@drawable/latar2">
     <TextView
         style="@style/tv_form"
+        android:textColor="@color/white"
         android:text="ID"/>
     <EditText
         android:id="@+id/et_add_id"
         style="@style/edit_form"
+        android:textColor="@color/white"
         android:hint="ID Here!!"/>
     <TextView
         style="@style/tv_form"
+        android:textColor="@color/white"
         android:text="Nama"/>
     <EditText
         android:id="@+id/et_add_name"
         style="@style/edit_form"
+        android:textColor="@color/white"
         android:hint="Name Here!!"/>
     <TextView
         style="@style/tv_form"
+        android:textColor="@color/white"
         android:text="Jenis Kholas"/>
     <EditText
         android:id="@+id/et_add_kholas"
         style="@style/edit_form"
+        android:textColor="@color/white"
         android:hint="Kholas Here!!"/>
     <TextView
         style="@style/tv_form"
+        android:textColor="@color/white"
         android:text="Surat yang dibacakan"/>
     <EditText
         android:id="@+id/et_add_surah"
         style="@style/edit_form"
+        android:textColor="@color/white"
         android:hint="Surah Here!!"/>
     <LinearLayout
         android:layout_width="match_parent"

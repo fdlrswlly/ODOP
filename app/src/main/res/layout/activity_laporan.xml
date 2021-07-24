@@ -1,31 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LaporanActivity">
+    tools:context=".LaporanActivity"
+    android:orientation="vertical"
+    android:background="@drawable/latar2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Laporan Kholas"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textSize="30dp"
+    android:fontFamily="@font/acme"
+    android:orientation="vertical" />
+    </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_data"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="580dp"
         android:layout_margin="15dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="271dp"/>
+        tools:layout_editor_absoluteY="271dp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_main_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_vertical"
+        app:backgroundTint="@color/green"
+        app:layout_goneMarginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:icon="@drawable/ic_baseline_arrow_back_24"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        />
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/btn_main_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="248dp"
+        android:layout_gravity="center_vertical"
         app:backgroundTint="@color/green"
-        app:layout_goneMarginBottom="16dp"
+        app:layout_goneMarginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:icon="@drawable/ic_baseline_add_circle_outline_24"
-        android:text="Add"
         android:textColor="@color/white"
         app:iconTint="@color/white"
         />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
+</LinearLayout>
